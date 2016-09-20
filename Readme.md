@@ -3,7 +3,7 @@
 
   starting with a 1-D grid with seven locations to focus on designing the basic code for the game
 
-  ## Level Design
+## Level Design
   1. User starts the game
     - Game Places a battleship at a random location on the grid
   1. Game play begins
