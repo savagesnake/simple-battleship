@@ -18,9 +18,9 @@ while (isSunk){
     //check if the guess is a hit and imcrement hits
     if(guess == location1 || guess == location2 || guess == location3 ){
       hits +=1;
-      alert("Hit!")
+      alert("Hit!");
     }else{
-      alert("Miss!")
+      alert("Miss!");
     }
 
     if (hits === 3){
