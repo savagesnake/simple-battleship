@@ -17,9 +17,9 @@ while (isSunk == false){
     guesses += 1;
 
     //check if the guess is a hit and imcrement hits
-    if(guess == location1 || guess == location2 || guess == location3 ){
-      hits +=1;
-      alert("Hit!");
+    if(guess == location1 || guess == location2  || guess == location3 ){
+        hits +=1;
+        alert("Hit!");
     }else{
       alert("Miss!");
     }
@@ -29,7 +29,6 @@ while (isSunk == false){
       alert("You sank my battleship!");
       // end if
     }
-
     // end of else
   }
   // end of while loop
