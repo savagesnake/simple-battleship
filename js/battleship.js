@@ -6,7 +6,7 @@ var hits = 0;
 var guesses = 0;
 var isSunk = false;
 
-while (isSunk == false){
+while (isSunk){
   guess = prompt("Ready, Aim,Fire! (enter a number from 0-6):");
   if(guess < 0 || guess > 6){
       alert("please enter a valid number");
@@ -18,6 +18,9 @@ while (isSunk == false){
     //check if the guess is a hit and imcrement hits
     if(guess == location1 || guess == location2 || guess == location3 ){
       hits +=1;
+      alert("Hit!")
+    }else{
+      alert("Miss!")
     }
 
     if (hits === 3){
@@ -32,6 +35,6 @@ while (isSunk == false){
 }
 
 var stats = "You took " +guesses+ " guesses to sink my battleship,"+
-            "which means your shooting accuracy was "+ (3/guesses);
+            "which means your shooting accuracy was "+ (3/guesses)*100+"%";
 
 alert(stats)
